@@ -784,20 +784,21 @@ void loop(){
             lcd.clear();
             delay(200);
             while(!tombol1){
-              maju(100,100);
-              delay(300);
-              while(1){
-                stopped();
-              }
-              /*pid_timer(5);
-              perempatan_lurus();
-              pid_timer(2);
-              perempatan_lurus();
-              pid_timer(1);
-              siku_kiri();
-              while(1){
-                stopped();
-              }*/
+              pid(kecepatan);
+              //maju(100,100);
+//              delay(300);
+//              while(1){
+//                stopped();
+//              }
+//              /*pid_timer(5);
+//              perempatan_lurus();
+//              pid_timer(2);
+//              perempatan_lurus();
+//              pid_timer(1);
+//              siku_kiri();
+//              while(1){
+//                stopped();
+//              }*/
             }
           }
           else if(!tombol3){
